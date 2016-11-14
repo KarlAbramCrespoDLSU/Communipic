@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80CBC4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Item"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        android:id="@+id/tv_titleadd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_titleadd"
+        android:text="Name"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:id="@+id/tv_addname" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:id="@+id/et_addname"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_addname"
+        android:text="Image"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        android:id="@+id/tv_addimage" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Browse gallery"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_border"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:padding="15dp"
+        android:text="Take a picture"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_border"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:padding="20dp"
+            android:id="@+id/button_canceladd"
+            android:background="@drawable/button_border"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColor="#26A69A"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:padding="20dp"
+            android:id="@+id/button_add"
+            android:background="@drawable/button_border_selected"/>
+
+    </LinearLayout>
+</LinearLayout>
